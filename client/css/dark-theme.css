@@ -1,0 +1,263 @@
+body {
+    color: #fff !important;
+    background: #0a0a0a !important;
+}
+
+a {
+    color: #90CAF9;
+}
+
+code {
+    background: #212121;
+    color: #fff;
+}
+
+pre {
+    background: #212121;
+    border: 1px #0a0a0a solid;
+    color: #fff;
+}
+
+.profile-hightlight img {
+    border: 2px #ffffff solid;
+}
+
+.message-search-panel, .message-dialog-chat {
+    background-color: #212121 !important;
+}
+
+.message-chat-received .message-chat-box {
+    color: #f5f5f5 !important;
+    background-color: #2b2b2b !important;
+}
+
+.message-chat-send .message-chat-box {
+    color: #f5f5f5 !important;
+    background-color: #424242 !important;
+}
+
+.message-dialog-input {
+    border-top: 1px rgba(255,255,255,0.075) solid;
+    background: #1e1e1e !important;
+}
+
+.message-dialog-info {
+    border-bottom: 1px rgba(255,255,255,0.075) solid;
+}
+
+.message-dialog-list {
+    border-right: 1px rgba(255,255,255,0.075) solid;
+}
+
+.message-search-panel {
+    border-bottom: 1px rgba(255,255,255,0.075) solid;
+}
+
+.message-search-panel input {
+    background-color: rgba(255,255,255,0.05) !important;
+}
+
+.message-user-online {
+    border: 2px #1e1e1e solid;
+}
+
+.message-new {
+    background-color: #0D47A1;
+    color: #E3F2FD;
+}
+
+.profile-avatar {
+    border: 4px #0a0a0a solid;
+}
+
+nav {
+    background: rgba(0,0,0,0.7) !important;
+    height: 64px;
+}
+
+.card-feed .card-content label {
+    color: #EEEEEE !important;
+}
+
+.feed-comment-like {
+    background: #616161 !important;
+    color: #FFF !important;
+}
+
+.bw-text {
+    color: #FFF !important;
+}
+
+.bw {
+    background: #FFF !important;
+}
+
+.wb-text {
+    color: #000 !important;
+}
+
+.wb {
+    background: #000 !important;
+}
+
+.index-bg-color {
+    background-color: #212121;
+}
+
+.side-nav li>a:hover {
+    background-color: rgba(255,255,255,0.05) !important;
+}
+
+.card, .card-panel, .collection-item, .collection, .collapsible-header  {
+    background: #1e1e1e !important;
+    color: #fff;
+}
+
+.modal-footer, .modal  {
+    background: #1e1e1e !important;
+    color: #fff;
+}
+
+.card-reveal {
+    background-color: #212121 !important;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255,255,255,0.075);
+}
+
+.btn-flat, .select-dropdown, input {
+    color: #fff !important;
+}
+
+.dropdown-content li:hover, .dropdown-content li.active {
+    background-color: #2b2b2b;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #FFF !important;
+}
+
+.navLink {
+    cursor: pointer;
+    background: rgba(33, 33, 33, 0) !important;
+    color: #e5e5e5 !important;
+    transition: 0.3s all;
+}
+
+.collection-item:hover {
+    background: rgba(33, 33, 33, .1) !important;
+}
+
+.card .collection-item:hover {
+    background: transparent !important;
+}
+
+.select-wrapper .caret {
+    fill: rgba(255, 255, 255, 0.87);
+}
+
+.article-color {
+    color: #e0e0e0 !important;
+}
+
+#blog-attaches {
+    float: left;
+    display: none;
+    margin-top: 12px;
+    padding-left: 8px;
+    border-left: 1px #eaeaea solid;
+}
+
+#blog-preloader {
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+}
+
+.datepicker-controls svg {
+    fill: #fff !important;
+}
+
+.datepicker-table td.is-today {
+    color: #2196F3;
+}
+
+.datepicker-table td.is-selected, .datepicker-date-display {
+    background-color: #2962FF;
+    color: #fff;
+}
+
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+    color: #fff;
+}
+
+.dropdown-content {
+    background: #424242;
+    color: #fff;
+}
+
+.dropdown-content a {
+    color: #fff !important;
+}
+
+.dropdown-content a:hover {
+    background-color: #757575 !important;
+}
+
+.collection .collection-item {
+    border-bottom: 1px solid rgba(255,255,255,0.075) !important;
+}
+
+.card-info .collection-item {
+    border-bottom: none !important;
+}
+
+.card-info .collection-item, .card-info.collection {
+    background: transparent !important;
+}
+
+.collection .collection-item:last-child {
+    border-bottom: none !important;
+}
+
+.autocomplete-content li .highlight {
+    color: #d4d4d4;
+}
+
+.input-field input[type="tel"]:focus, .input-field input[type="number"]:focus, .input-field input[type="email"]:focus, .input-field input[type="password"]:focus, .input-field input[type="text"]:focus, .input-field textarea:focus {
+    color: #FFF !important;
+}
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    background-color: rgba(255,255,255,0.05);
+}
+
+input[type=search]:not(.browser-default), input[type=search]:not(.browser-default):focus:not([readonly]) {
+    background-color: rgba(255,255,255,0.075);
+}
+
+input[type=search]::placeholder {
+    color: #ececec;
+}
+
+.divider, hr {
+    background-color: rgba(255,255,255,0.075);
+}
+
+::-webkit-scrollbar-track        { background-color: #212121 !important; border-radius: 20px;  }
+::-webkit-scrollbar-thumb        { background-color: #757575 !important; -webkit-appearance: none;  border-radius:20px; }
+::-webkit-scrollbar-thumb:hover  { background-color: #2962FF !important; }

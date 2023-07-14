@@ -1,0 +1,850 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap");
+
+body {
+  background: #0E0E0E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #444;
+  height: 100%;
+  user-select: none;
+}
+*/
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a {
+    cursor: pointer;
+}
+
+.no-mar {
+    margin: 0 !important;
+}
+
+code {
+    background: #EEEEEE;
+    border-radius: 2px;
+    color: #000;
+    padding: 0 4px;
+}
+
+pre {
+    background: #efefef;
+    margin: 0;
+    padding: 12px;
+    border-radius: 8px;
+    color: #000;
+    overflow: auto;
+}
+
+pre code {
+    background: inherit;
+    border-radius: 0;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: transparent;
+}
+
+.container-padding {
+    padding-top: 80px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.feed-like-big {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    user-select: none;
+    overflow: hidden;
+}
+
+.feed-like-big i {
+    font-size: 12rem;
+}
+
+.btn {
+    box-shadow: none;
+    border-radius: 8px;
+    background: transparent;
+    line-height: 34px;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-small:hover, .btn-floating:hover {
+    box-shadow: none;
+}
+
+.z-depth-s {
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%) !important;
+}
+
+.z-depth-s2 {
+    box-shadow: 4px 8px 16px rgb(0 0 0 / 8%) !important
+}
+
+nav .sidenav-trigger i {
+    height: 44px;
+    line-height: 44px;
+}
+
+
+nav .sidenav-trigger {
+    height: 44px;
+}
+
+.slidenav {
+    z-index: 1000;
+}
+
+.btn-large {
+    height: 54px;
+    line-height: 54px;
+}
+
+.card .card-image img {
+    border-radius: 8px 8px 0 0;
+}
+
+.card .card-action:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.card-panel, .card, .progress, .collapsible {
+    box-shadow: none;
+    border-radius: 8px;
+    border: 1px #e1e1e1 solid;
+}
+
+.collapsible-header, .collapsible-body, thead {
+    border-radius: 8px;
+    border-bottom: none !important;
+}
+
+.collapsible li {
+    margin-bottom: 4px;
+}
+
+.btn-floating {
+    border-radius: 50% !important;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e1e1e1;
+    width: 100%;
+}
+
+.card-image-feed-box {
+    max-height: 600px !important;
+}
+
+.square {
+    position: relative;
+    display: block;
+}
+
+.square:after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.square-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-tab-span {
+    margin: auto;
+}
+
+.profile-tab-icon {
+    line-height: 48px;
+    margin-right: 8px
+}
+
+.profile-avatar {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border: 4px #ffffff solid;
+}
+
+.profile-hightlight-list {
+    width: 100%;
+    overflow-x: auto
+}
+
+.profile-hightlight {
+    min-width: 90px;
+    margin: auto;
+    padding: 4px;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.profile-hightlight img {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border: 2px #752ee8 solid;
+}
+
+.message-search-panel {
+    padding: 8px;
+    border-bottom: 1px #efefef solid;
+}
+
+.message-search-panel .nav-notify-indicator {
+    top: 10px;
+    height: 14px;
+    right: 2px;
+}
+
+.message-search-panel .dropdown-btn {
+    width: 28px;
+    margin-left: 6px;
+    text-align: center;
+}
+
+.message-search-panel .dropdown-btn i {
+    line-height: 45px;
+    width: 28px;
+}
+
+.message-search-panel .show-on-small {
+    width: 28px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+.message-search-panel .show-on-small i {
+    line-height: 45px;
+    width: 28px;
+}
+
+.message-dialog-list .dropdown-content li {
+    min-height: 1px !important;
+}
+
+.message-search-panel input {
+    background-color: rgba(0,0,0,0.03) !important;
+}
+
+.message-time {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+}
+
+.message-pin {
+    background-color: rgba(0,0,0,0.03) !important;
+}
+
+.message-new {
+    color: #0277BD;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    display: flex;
+    border-radius: 25px;
+    padding: 0 12px;
+    background-color: #E3F2FD;
+}
+
+.message-time i {
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 2px;
+}
+
+.message-a-block {
+    width: calc(100% - 48px);
+    display: block;
+}
+
+.message-preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 22px;
+    white-space: nowrap;
+}
+
+.message-user-online {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px #fff solid;
+    left: 44px;
+    top: 36px;
+    z-index: 1;
+}
+
+.message-dialog-info {
+    display: flex;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #efefef solid;
+    margin: 0;
+}
+
+.message-dialog-info .collection-item {
+    min-height: 12px !important;
+    width: 100%;
+    padding-top: 8.65px;
+    padding-bottom: 8.65px;
+}
+
+.message-chat-line {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-chat-received {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    padding-bottom: 2px;
+    width: 100%;
+}
+
+.message-chat-received .message-chat-box {
+    color: #424242 !important;
+    background-color: #f5f5f5 !important;
+}
+
+.message-react {
+    margin-left: 4px;
+}
+
+.message-chat-send {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    padding-bottom: 2px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.message-chat-send .message-chat-box {
+    margin-left: auto;
+    color: #fff !important;
+    background-color: #2196F3 !important;
+}
+
+.message-chat-send .message-chat-box a {
+    color: #E3F2FD !important;
+}
+
+.message-dialog-chat {
+    overflow: auto;
+    height: calc(100% - 122px);
+    padding-bottom: 22px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.message-chat-box {
+    width: auto;
+    max-width: 80%;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 1.01rem;
+}
+
+.message-chat-time {
+    margin-left: 12px;
+    display: flex;
+    line-height: 16px;
+}
+
+.message-chat-time i {
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.message-chat-time-right {
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+.message-dialog-input {
+    display: flex;
+    position: absolute;
+    width: inherit;
+    bottom: 0;
+    padding: 8px;
+    border-top: 1px #efefef solid;
+    background: #fff;
+}
+
+.message-btn-send {
+    cursor: pointer;
+    width: 45px;
+    text-align: center;
+}
+
+.message-btn-send i {
+    line-height: 42px;
+}
+
+.message-dialog-input textarea {
+    margin: 0 !important;
+}
+
+.message-dialog-list {
+    width: 300px;
+    height: calc(100vh - 100px);
+    border: none;
+    margin: 0;
+    border-radius: 8px 0 0 8px;
+    overflow: auto;
+    border-right: 1px #efefef solid;
+}
+
+.message-dialog-list li {
+    min-height: 12px !important;
+}
+
+.message-dialog-message-list {
+    width: calc(100% - 300px);
+    height: calc(100vh - 100px);
+    border-radius: 0 8px 8px 0;
+    overflow: auto;
+}
+
+img {
+    user-select: none;
+}
+
+nav {
+    background: rgba(255,255,255,0.7);
+    height: 64px;
+}
+
+.backdrop-blur {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.sidenav .divider {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.card-panel, .card, .progress, .collapsible {
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    border: none;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.shadow {
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%) !important;
+    transition: all .3s cubic-bezier(0,0,.5,1) !important;
+}
+
+.hoverable-shadow {
+    transition: all .3s cubic-bezier(0,0,.5,1) !important;
+}
+
+.hoverable-shadow:hover {
+    box-shadow: 2px 4px 16px rgb(0 0 0 / 16%) !important;
+    transform: scale(1.01) !important;
+}
+
+.hoverable-shadow-2 {
+    transition: all .3s cubic-bezier(0,0,.5,1) !important;
+}
+
+.hoverable-shadow-2:hover {
+    box-shadow: 2px 4px 16px rgb(0 0 0 / 16%) !important;
+}
+
+.round-50 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.round-30 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.round-21 {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+.round-11 {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+.diamond-21 {
+    width: 21px;
+    height: 21px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.diamond-11 {
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    margin-top: 6px;
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+.iphone-order-img img {
+    width: 100%;
+}
+
+.iphone-cat-block {
+    cursor: pointer;
+    border-radius: inherit;
+    margin: 0;
+    transition: 0.3s all;
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+}
+
+.iphone-cat-block:hover {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.slidenav-filter {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0.8);
+}
+
+body {
+    line-height: 1;
+    background: #fbfbfd !important;
+}
+
+.btn {
+    font-weight: 500;
+    transition: 0.3s all;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.body-grey {
+    background: #fbfbfd;
+}
+
+.section {
+    width: 100%;
+}
+
+.catalog-iphone {
+    margin: auto;
+    opacity: 0.7;
+    width: 12%;
+    min-width: 64px;
+    transition: 0.3s all cubic-bezier(0,0,.5,1);
+    cursor: pointer;
+}
+
+.catalog-iphone:hover {
+    opacity: 1;
+    transform: scale3D(1.15, 1.15, 1.15);
+}
+
+.main-bg-star {
+    background: url(https://i.imgur.com/hmE4UZp.png) no-repeat;
+    background-size: contain;
+}
+
+.main-bg-star img {
+    width: 100%;
+    padding: 10%;
+}
+
+.main-star-left {
+    width: 35%;
+}
+
+.main-star-right {
+    width: 65%;
+}
+
+.main-star-right .vertical-container {
+    height: 100%;
+}
+
+.main-star-right .vertical-container-perm {
+    height: 100%;
+}
+
+.admin-left {
+    width: 250px;
+    background: #fbfbfd;
+}
+
+.admin-left .collection {
+    background: transparent;
+    border: none;
+}
+
+.admin-left .collection-item {
+    background: transparent;
+    line-height: 26px;
+}
+
+.admin-left .collection-item i {
+    margin-right: 12px;
+}
+
+.admin-right {
+    padding-top: 30px;
+    width: calc(100% - 250px);
+    border-radius: 0 0 0 8px
+}
+
+.code-block {
+    border: 1px solid #9c9c9c54;
+    background: #9c9c9c0f;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.vertical-container {
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.vertical-container-perm {
+    position: relative;
+}
+
+.vertical-center-perm {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+aform {
+    width: 100%;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    height: 100%;
+}
+
+@media only screen and (min-width: 993px) {
+
+}
+
+@media only screen and (min-width: 1590px) {
+
+}
+
+@media only screen and (min-width: 1900px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+    main {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .no-pad-s {
+        padding: 0 !important;
+    }
+
+    .no-mar-s {
+        margin: 0 !important;
+    }
+
+    .container-padding {
+        padding-top: 45px;
+    }
+
+    .container-padding-msg {
+        padding-top: 0px;
+    }
+
+    .message-dialog-info {
+        z-index: 1;
+        position: fixed !important;
+        top: 0;
+        background: #fff;
+    }
+
+    .dialog-menu-action {
+        position: absolute !important;
+        z-index: 3 !important;
+    }
+
+    .message-dialog-info-margin {
+        margin-left: 40px !important;
+    }
+
+    .message-dialog-input {
+        z-index: 1;
+        position: fixed;
+        width: 100% !important;
+        padding-bottom: 32px;
+        bottom: 0;
+    }
+
+    .message-dialog-chat {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        padding-top: 64px;
+        padding-bottom: 110px;
+        height: auto;
+        background: #fff;
+    }
+
+    .message-search-panel {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 0;
+        background: #fff;
+    }
+
+    .message-dialog-list {
+        width: 100%;
+        padding-top: 64px;
+        height: auto;
+        border-radius: 8px;
+        overflow: auto;
+        border-right: none;
+    }
+
+    .message-dialog-message-list {
+        display: none;
+    }
+
+    .profile-hightlight img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .main-star-block {
+        margin-top: 50px;
+    }
+
+    .iphone-list-container {
+        width: 100%;
+    }
+
+    .iphone-list-row {
+        overflow: auto;
+        padding-bottom: 20px;
+    }
+
+    .iphone-list-col {
+        width: 700px !important;
+    }
+
+    .fullsize {
+        min-height: 100vh;
+    }
+
+    .vertical-container-perm {
+        position: inherit;
+    }
+
+    .vertical-center-perm {
+        margin: 0;
+        position: inherit;
+        top: 0;
+        -ms-transform: translateY(0) !important;
+        transform: translateY(0) !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .main-star-block {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,2504 @@
+.input-field {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Text inputs */
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.03);
+    outline: none;
+    height: 3rem;
+    width: calc(100% - 24px);
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0 12px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+}
+
+input[type=search]:not(.browser-default), input[type=search]:not(.browser-default):focus:not([readonly]) {
+    background-color: rgba(0,0,0,0.1);
+}
+
+input[type=search]::placeholder {
+    color: #797979
+}
+
+textarea.materialize-textarea {
+    height: 2rem;
+    min-height: 2rem;
+    padding: 12px 12px 0;
+}
+
+input:not([type]):disabled, input:not([type])[readonly="readonly"],
+input[type=text]:not(.browser-default):disabled,
+input[type=text]:not(.browser-default)[readonly="readonly"],
+input[type=password]:not(.browser-default):disabled,
+input[type=password]:not(.browser-default)[readonly="readonly"],
+input[type=email]:not(.browser-default):disabled,
+input[type=email]:not(.browser-default)[readonly="readonly"],
+input[type=url]:not(.browser-default):disabled,
+input[type=url]:not(.browser-default)[readonly="readonly"],
+input[type=time]:not(.browser-default):disabled,
+input[type=time]:not(.browser-default)[readonly="readonly"],
+input[type=date]:not(.browser-default):disabled,
+input[type=date]:not(.browser-default)[readonly="readonly"],
+input[type=datetime]:not(.browser-default):disabled,
+input[type=datetime]:not(.browser-default)[readonly="readonly"],
+input[type=datetime-local]:not(.browser-default):disabled,
+input[type=datetime-local]:not(.browser-default)[readonly="readonly"],
+input[type=tel]:not(.browser-default):disabled,
+input[type=tel]:not(.browser-default)[readonly="readonly"],
+input[type=number]:not(.browser-default):disabled,
+input[type=number]:not(.browser-default)[readonly="readonly"],
+input[type=search]:not(.browser-default):disabled,
+input[type=search]:not(.browser-default)[readonly="readonly"],
+textarea.materialize-textarea:disabled,
+textarea.materialize-textarea[readonly="readonly"] {
+    color: rgba(0, 0, 0, 0.42);
+    border-bottom: none;
+}
+
+input:not([type]):disabled + label,
+input:not([type])[readonly="readonly"] + label,
+input[type=text]:not(.browser-default):disabled + label,
+input[type=text]:not(.browser-default)[readonly="readonly"] + label,
+input[type=password]:not(.browser-default):disabled + label,
+input[type=password]:not(.browser-default)[readonly="readonly"] + label,
+input[type=email]:not(.browser-default):disabled + label,
+input[type=email]:not(.browser-default)[readonly="readonly"] + label,
+input[type=url]:not(.browser-default):disabled + label,
+input[type=url]:not(.browser-default)[readonly="readonly"] + label,
+input[type=time]:not(.browser-default):disabled + label,
+input[type=time]:not(.browser-default)[readonly="readonly"] + label,
+input[type=date]:not(.browser-default):disabled + label,
+input[type=date]:not(.browser-default)[readonly="readonly"] + label,
+input[type=datetime]:not(.browser-default):disabled + label,
+input[type=datetime]:not(.browser-default)[readonly="readonly"] + label,
+input[type=datetime-local]:not(.browser-default):disabled + label,
+input[type=datetime-local]:not(.browser-default)[readonly="readonly"] + label,
+input[type=tel]:not(.browser-default):disabled + label,
+input[type=tel]:not(.browser-default)[readonly="readonly"] + label,
+input[type=number]:not(.browser-default):disabled + label,
+input[type=number]:not(.browser-default)[readonly="readonly"] + label,
+input[type=search]:not(.browser-default):disabled + label,
+input[type=search]:not(.browser-default)[readonly="readonly"] + label,
+textarea.materialize-textarea:disabled + label,
+textarea.materialize-textarea[readonly="readonly"] + label {
+    color: rgba(0, 0, 0, 0.42);
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]),
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #26a69a;
+}
+
+input:not([type]) + label:after,
+input[type=text]:not(.browser-default) + label:after,
+input[type=password]:not(.browser-default) + label:after,
+input[type=email]:not(.browser-default) + label:after,
+input[type=url]:not(.browser-default) + label:after,
+input[type=time]:not(.browser-default) + label:after,
+input[type=date]:not(.browser-default) + label:after,
+input[type=datetime]:not(.browser-default) + label:after,
+input[type=datetime-local]:not(.browser-default) + label:after,
+input[type=tel]:not(.browser-default) + label:after,
+input[type=number]:not(.browser-default) + label:after,
+input[type=search]:not(.browser-default) + label:after,
+textarea.materialize-textarea + label:after, .select-wrapper + label:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-out, .2s color ease-out;
+    transition: .2s opacity ease-out, .2s color ease-out;
+}
+
+.slafy-color {
+    background: rgb(2,0,42) !important;
+    background: linear-gradient(90deg, rgba(2,0,42,1) 0%, rgba(184,14,97,1) 33%, rgba(0,212,255,1) 100%) !important;
+}
+
+.slafy-color2 {
+    background: rgb(2,0,42) !important;
+    background: linear-gradient(90deg, rgb(246, 18, 128) 0%, rgba(0,212,255,1) 100%) !important;
+}
+
+.slafy-color-text {
+    background: rgb(2,0,42) !important;
+    background: linear-gradient(90deg, rgba(2,0,42,1) 0%, rgba(184,14,97,1) 33%, rgba(0,212,255,1) 100%) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border-red {
+    border: 1px solid #F44336 !important
+}
+.border-red.border-lighten-5 {
+    border: 1px solid #FFEBEE !important
+}
+.border-red.border-lighten-4 {
+    border: 1px solid #FFCDD2 !important
+}
+.border-red.border-lighten-3 {
+    border: 1px solid #EF9A9A !important
+}
+.border-red.border-lighten-2 {
+    border: 1px solid #E57373 !important
+}
+.border-red.border-lighten-1 {
+    border: 1px solid #EF5350 !important
+}
+.border-red.border-darken-1 {
+    border: 1px solid #E53935 !important
+}
+.border-red.border-darken-2 {
+    border: 1px solid #D32F2F !important
+}
+.border-red.border-darken-3 {
+    border: 1px solid #C62828 !important
+}
+.border-red.border-darken-4 {
+    border: 1px solid #B71C1C !important
+}
+.border-red.border-accent-1 {
+    border: 1px solid #FF8A80 !important
+}
+.border-red.border-accent-2 {
+    border: 1px solid #FF5252 !important
+}
+.border-red.border-accent-3 {
+    border: 1px solid #FF1744 !important
+}
+.border-red.border-accent-4 {
+    border: 1px solid #D50000 !important
+}
+.border-pink {
+    border: 1px solid #e91e63 !important
+}
+.border-pink.border-lighten-5 {
+    border: 1px solid #fce4ec !important
+}
+.border-pink.border-lighten-4 {
+    border: 1px solid #f8bbd0 !important
+}
+.border-pink.border-lighten-3 {
+    border: 1px solid #f48fb1 !important
+}
+.border-pink.border-lighten-2 {
+    border: 1px solid #f06292 !important
+}
+.border-pink.border-lighten-1 {
+    border: 1px solid #ec407a !important
+}
+.border-pink.border-darken-1 {
+    border: 1px solid #d81b60 !important
+}
+.border-pink-text.border-text-darken-2 {
+    color: #c2185b !important
+}
+.border-pink.border-darken-3 {
+    border: 1px solid #ad1457 !important
+}
+.border-pink.border-darken-4 {
+    border: 1px solid #880e4f !important
+}
+.border-pink.border-accent-1 {
+    border: 1px solid #ff80ab !important
+}
+.border-pink.border-accent-2 {
+    border: 1px solid #ff4081 !important
+}
+.border-pink.border-accent-3 {
+    border: 1px solid #f50057 !important
+}
+.border-pink.border-accent-4 {
+    border: 1px solid #c51162 !important
+}
+.border-purple {
+    border: 1px solid #9c27b0 !important
+}
+.border-purple.border-lighten-5 {
+    border: 1px solid #f3e5f5 !important
+}
+.border-purple.border-lighten-4 {
+    border: 1px solid #e1bee7 !important
+}
+.border-purple.border-lighten-3 {
+    border: 1px solid #ce93d8 !important
+}
+.border-purple.border-lighten-2 {
+    border: 1px solid #ba68c8 !important
+}
+.border-purple.border-lighten-1 {
+    border: 1px solid #ab47bc !important
+}
+.border-purple.border-darken-1 {
+    border: 1px solid #8e24aa !important
+}
+.border-purple.border-darken-2 {
+    border: 1px solid #7b1fa2 !important
+}
+.border-purple.border-darken-3 {
+    border: 1px solid #6a1b9a !important
+}
+.border-purple.border-darken-4 {
+    border: 1px solid #4a148c !important
+}
+.border-purple.border-accent-1 {
+    border: 1px solid #ea80fc !important
+}
+.border-purple.border-accent-2 {
+    border: 1px solid #e040fb !important
+}
+.border-purple.border-accent-3 {
+    border: 1px solid #d500f9 !important
+}
+.border-purple.border-accent-4 {
+    border: 1px solid #a0f !important
+}
+.border-deep-purple {
+    border: 1px solid #673ab7 !important
+}
+.border-deep-purple.border-lighten-5 {
+    border: 1px solid #ede7f6 !important
+}
+.border-deep-purple.border-lighten-4 {
+    border: 1px solid #d1c4e9 !important
+}
+.border-deep-purple.border-lighten-3 {
+    border: 1px solid #b39ddb !important
+}
+.border-deep-purple.border-lighten-2 {
+    border: 1px solid #9575cd !important
+}
+.border-deep-purple.border-lighten-1 {
+    border: 1px solid #7e57c2 !important
+}
+.border-deep-purple.border-darken-1 {
+    border: 1px solid #5e35b1 !important
+}
+.border-deep-purple.border-darken-2 {
+    border: 1px solid #512da8 !important
+}
+.border-deep-purple.border-darken-3 {
+    border: 1px solid #4527a0 !important
+}
+.border-deep-purple.border-darken-4 {
+    border: 1px solid #311b92 !important
+}
+.border-deep-purple.border-accent-1 {
+    border: 1px solid #b388ff !important
+}
+.border-deep-purple.border-accent-2 {
+    border: 1px solid #7c4dff !important
+}
+.border-deep-purple.border-accent-3 {
+    border: 1px solid #651fff !important
+}
+.border-deep-purple.border-accent-4 {
+    border: 1px solid #6200ea !important
+}
+.border-indigo {
+    border: 1px solid #3f51b5 !important
+}
+.border-indigo.border-lighten-5 {
+    border: 1px solid #e8eaf6 !important
+}
+.border-indigo.border-lighten-4 {
+    border: 1px solid #c5cae9 !important
+}
+.border-indigo.border-lighten-3 {
+    border: 1px solid #9fa8da !important
+}
+.border-indigo.border-lighten-2 {
+    border: 1px solid #7986cb !important
+}
+.border-indigo.border-lighten-1 {
+    border: 1px solid #5c6bc0 !important
+}
+.border-indigo.border-darken-1 {
+    border: 1px solid #3949ab !important
+}
+.border-indigo.border-darken-2 {
+    border: 1px solid #303f9f !important
+}
+.border-indigo.border-darken-3 {
+    border: 1px solid #283593 !important
+}
+.border-indigo.border-darken-4 {
+    border: 1px solid #1a237e !important
+}
+.border-indigo.border-accent-1 {
+    border: 1px solid #8c9eff !important
+}
+.border-indigo.border-accent-2 {
+    border: 1px solid #536dfe !important
+}
+.border-indigo.border-accent-3 {
+    border: 1px solid #3d5afe !important
+}
+.border-indigo.border-accent-4 {
+    border: 1px solid #304ffe !important
+}
+.border-blue {
+    border: 1px solid #2196F3 !important
+}
+.border-blue.border-lighten-5 {
+    border: 1px solid #E3F2FD !important
+}
+.border-blue.border-lighten-4 {
+    border: 1px solid #BBDEFB !important
+}
+.border-blue.border-lighten-3 {
+    border: 1px solid #90CAF9 !important
+}
+.border-blue.border-lighten-2 {
+    border: 1px solid #64B5F6 !important
+}
+.border-blue.border-lighten-1 {
+    border: 1px solid #42A5F5 !important
+}
+.border-blue.border-darken-1 {
+    border: 1px solid #1E88E5 !important
+}
+.border-blue.border-darken-2 {
+    border: 1px solid #1976D2 !important
+}
+.border-blue.border-darken-3 {
+    border: 1px solid #1565C0 !important
+}
+.border-blue.border-darken-4 {
+    border: 1px solid #0D47A1 !important
+}
+.border-blue.border-accent-1 {
+    border: 1px solid #82B1FF !important
+}
+.border-blue.border-accent-2 {
+    border: 1px solid #448AFF !important
+}
+.border-blue.border-accent-3 {
+    border: 1px solid #2979FF !important
+}
+.border-blue.border-accent-4 {
+    border: 1px solid #2962FF !important
+}
+.border-light-blue {
+    border: 1px solid #03a9f4 !important
+}
+.border-light-blue.border-lighten-5 {
+    border: 1px solid #e1f5fe !important
+}
+.border-light-blue.border-lighten-4 {
+    border: 1px solid #b3e5fc !important
+}
+.border-light-blue.border-lighten-3 {
+    border: 1px solid #81d4fa !important
+}
+.border-light-blue.border-lighten-2 {
+    border: 1px solid #4fc3f7 !important
+}
+.border-light-blue.border-lighten-1 {
+    border: 1px solid #29b6f6 !important
+}
+.border-light-blue.border-darken-1 {
+    border: 1px solid #039be5 !important
+}
+.border-light-blue.border-darken-2 {
+    border: 1px solid #0288d1 !important
+}
+.border-light-blue.border-darken-3 {
+    border: 1px solid #0277bd !important
+}
+.border-light-blue.border-darken-4 {
+    border: 1px solid #01579b !important
+}
+.border-light-blue.border-accent-1 {
+    border: 1px solid #80d8ff !important
+}
+.border-light-blue.border-accent-2 {
+    border: 1px solid #40c4ff !important
+}
+.border-light-blue.border-accent-3 {
+    border: 1px solid #00b0ff !important
+}
+.border-light-blue.border-accent-4 {
+    border: 1px solid #0091ea !important
+}
+.border-cyan {
+    border: 1px solid #00bcd4 !important
+}
+.border-cyan.border-lighten-5 {
+    border: 1px solid #e0f7fa !important
+}
+.border-cyan.border-lighten-4 {
+    border: 1px solid #b2ebf2 !important
+}
+.border-cyan.border-lighten-3 {
+    border: 1px solid #80deea !important
+}
+.border-cyan.border-lighten-2 {
+    border: 1px solid #4dd0e1 !important
+}
+.border-cyan.border-lighten-1 {
+    border: 1px solid #26c6da !important
+}
+.border-cyan.border-darken-1 {
+    border: 1px solid #00acc1 !important
+}
+.border-cyan.border-darken-2 {
+    border: 1px solid #0097a7 !important
+}
+.border-cyan.border-darken-3 {
+    border: 1px solid #00838f !important
+}
+.border-cyan.border-darken-4 {
+    border: 1px solid #006064 !important
+}
+.border-cyan.border-accent-1 {
+    border: 1px solid #84ffff !important
+}
+.border-cyan.border-accent-2 {
+    border: 1px solid #18ffff !important
+}
+.border-cyan.border-accent-3 {
+    border: 1px solid #00e5ff !important
+}
+.border-cyan.border-accent-4 {
+    border: 1px solid #00b8d4 !important
+}
+.border-teal {
+    border: 1px solid #009688 !important
+}
+.border-teal.border-lighten-5 {
+    border: 1px solid #e0f2f1 !important
+}
+.border-teal.border-lighten-4 {
+    border: 1px solid #b2dfdb !important
+}
+.border-teal.border-lighten-3 {
+    border: 1px solid #80cbc4 !important
+}
+.border-teal.border-lighten-2 {
+    border: 1px solid #4db6ac !important
+}
+.border-teal.border-lighten-1 {
+    border: 1px solid #26a69a !important
+}
+.border-teal.border-darken-1 {
+    border: 1px solid #00897b !important
+}
+.border-teal.border-darken-2 {
+    border: 1px solid #00796b !important
+}
+.border-teal.border-darken-3 {
+    border: 1px solid #00695c !important
+}
+.border-teal.border-darken-4 {
+    border: 1px solid #004d40 !important
+}
+.border-teal.border-accent-1 {
+    border: 1px solid #a7ffeb !important
+}
+.border-teal.border-accent-2 {
+    border: 1px solid #64ffda !important
+}
+.border-teal.border-accent-3 {
+    border: 1px solid #1de9b6 !important
+}
+.border-teal.border-accent-4 {
+    border: 1px solid #00bfa5 !important
+}
+.border-green {
+    border: 1px solid #4CAF50 !important
+}
+.border-green.border-lighten-5 {
+    border: 1px solid #E8F5E9 !important
+}
+.border-green.border-lighten-4 {
+    border: 1px solid #C8E6C9 !important
+}
+.border-green.border-lighten-3 {
+    border: 1px solid #A5D6A7 !important
+}
+.border-green.border-lighten-2 {
+    border: 1px solid #81C784 !important
+}
+.border-green.border-lighten-1 {
+    border: 1px solid #66BB6A !important
+}
+.border-green.border-darken-1 {
+    border: 1px solid #43A047 !important
+}
+.border-green.border-darken-2 {
+    border: 1px solid #388E3C !important
+}
+.border-green.border-darken-3 {
+    border: 1px solid #2E7D32 !important
+}
+.border-green.border-darken-4 {
+    border: 1px solid #1B5E20 !important
+}
+.border-green.border-accent-1 {
+    border: 1px solid #B9F6CA !important
+}
+.border-green.border-accent-2 {
+    border: 1px solid #69F0AE !important
+}
+.border-green.border-accent-3 {
+    border: 1px solid #00E676 !important
+}
+.border-green.border-accent-4 {
+    border: 1px solid #00C853 !important
+}
+.border-light-green {
+    border: 1px solid #8bc34a !important
+}
+.border-light-green.border-lighten-5 {
+    border: 1px solid #f1f8e9 !important
+}
+.border-light-green.border-lighten-4 {
+    border: 1px solid #dcedc8 !important
+}
+.border-light-green.border-lighten-3 {
+    border: 1px solid #c5e1a5 !important
+}
+.border-light-green.border-lighten-2 {
+    border: 1px solid #aed581 !important
+}
+.border-light-green.border-lighten-1 {
+    border: 1px solid #9ccc65 !important
+}
+.border-light-green.border-darken-1 {
+    border: 1px solid #7cb342 !important
+}
+.border-light-green.border-darken-2 {
+    border: 1px solid #689f38 !important
+}
+.border-light-green.border-darken-3 {
+    border: 1px solid #558b2f !important
+}
+.border-light-green.border-darken-4 {
+    border: 1px solid #33691e !important
+}
+.border-light-green.border-accent-1 {
+    border: 1px solid #ccff90 !important
+}
+.border-light-green.border-accent-2 {
+    border: 1px solid #b2ff59 !important
+}
+.border-light-green.border-accent-3 {
+    border: 1px solid #76ff03 !important
+}
+.border-light-green.border-accent-4 {
+    border: 1px solid #64dd17 !important
+}
+.border-lime {
+    border: 1px solid #cddc39 !important
+}
+.border-lime.border-lighten-5 {
+    border: 1px solid #f9fbe7 !important
+}
+.border-lime.border-lighten-4 {
+    border: 1px solid #f0f4c3 !important
+}
+.border-lime.border-lighten-3 {
+    border: 1px solid #e6ee9c !important
+}
+.border-lime.border-lighten-2 {
+    border: 1px solid #dce775 !important
+}
+.border-lime.border-lighten-1 {
+    border: 1px solid #d4e157 !important
+}
+.border-lime.border-darken-1 {
+    border: 1px solid #c0ca33 !important
+}
+.border-lime.border-darken-2 {
+    border: 1px solid #afb42b !important
+}
+.border-lime.border-darken-3 {
+    border: 1px solid #9e9d24 !important
+}
+.border-lime.border-darken-4 {
+    border: 1px solid #827717 !important
+}
+.border-lime.border-accent-1 {
+    border: 1px solid #f4ff81 !important
+}
+.border-lime.border-accent-2 {
+    border: 1px solid #eeff41 !important
+}
+.border-lime.border-accent-3 {
+    border: 1px solid #c6ff00 !important
+}
+.border-lime.border-accent-4 {
+    border: 1px solid #aeea00 !important
+}
+.border-yellow {
+    border: 1px solid #ffeb3b !important
+}
+.border-yellow.border-lighten-5 {
+    border: 1px solid #fffde7 !important
+}
+.border-yellow.border-lighten-4 {
+    border: 1px solid #fff9c4 !important
+}
+.border-yellow.border-lighten-3 {
+    border: 1px solid #fff59d !important
+}
+.border-yellow.border-lighten-2 {
+    border: 1px solid #fff176 !important
+}
+.border-yellow.border-lighten-1 {
+    border: 1px solid #ffee58 !important
+}
+.border-yellow.border-darken-1 {
+    border: 1px solid #fdd835 !important
+}
+.border-yellow.border-darken-2 {
+    border: 1px solid #fbc02d !important
+}
+.border-yellow.border-darken-3 {
+    border: 1px solid #f9a825 !important
+}
+.border-yellow.border-darken-4 {
+    border: 1px solid #f57f17 !important
+}
+.border-yellow.border-accent-1 {
+    border: 1px solid #ffff8d !important
+}
+.border-yellow.border-accent-2 {
+    border: 1px solid #ff0 !important
+}
+.border-yellow.border-accent-3 {
+    border: 1px solid #ffea00 !important
+}
+.border-yellow.border-accent-4 {
+    border: 1px solid #ffd600 !important
+}
+.border-amber {
+    border: 1px solid #ffc107 !important
+}
+.border-amber.border-lighten-5 {
+    border: 1px solid #fff8e1 !important
+}
+.border-amber.border-lighten-4 {
+    border: 1px solid #ffecb3 !important
+}
+.border-amber.border-lighten-3 {
+    border: 1px solid #ffe082 !important
+}
+.border-amber.border-lighten-2 {
+    border: 1px solid #ffd54f !important
+}
+.border-amber.border-lighten-1 {
+    border: 1px solid #ffca28 !important
+}
+.border-amber.border-darken-1 {
+    border: 1px solid #ffb300 !important
+}
+.border-amber.border-darken-2 {
+    border: 1px solid #ffa000 !important
+}
+.border-amber.border-darken-3 {
+    border: 1px solid #ff8f00 !important
+}
+.border-amber.border-darken-4 {
+    border: 1px solid #ff6f00 !important
+}
+.border-amber.border-accent-1 {
+    border: 1px solid #ffe57f !important
+}
+.border-amber.border-accent-2 {
+    border: 1px solid #ffd740 !important
+}
+.border-amber.border-accent-3 {
+    border: 1px solid #ffc400 !important
+}
+.border-amber.border-accent-4 {
+    border: 1px solid #ffab00 !important
+}
+.border-orange {
+    border: 1px solid #ff9800 !important
+}
+.border-orange-text {
+    color: #ff9800 !important
+}
+.border-orange.border-lighten-5 {
+    border: 1px solid #fff3e0 !important
+}
+.border-orange.border-lighten-4 {
+    border: 1px solid #ffe0b2 !important
+}
+.border-orange.border-lighten-3 {
+    border: 1px solid #ffcc80 !important
+}
+.border-orange.border-lighten-2 {
+    border: 1px solid #ffb74d !important
+}
+.border-orange.border-lighten-1 {
+    border: 1px solid #ffa726 !important
+}
+.border-orange.border-darken-1 {
+    border: 1px solid #fb8c00 !important
+}
+.border-orange.border-darken-2 {
+    border: 1px solid #f57c00 !important
+}
+.border-orange.border-darken-3 {
+    border: 1px solid #ef6c00 !important
+}
+.border-orange.border-darken-4 {
+    border: 1px solid #e65100 !important
+}
+.border-orange.border-accent-1 {
+    border: 1px solid #ffd180 !important
+}
+.border-orange.border-accent-2 {
+    border: 1px solid #ffab40 !important
+}
+.border-orange.border-accent-3 {
+    border: 1px solid #ff9100 !important
+}
+.border-orange.border-accent-4 {
+    border: 1px solid #ff6d00 !important
+}
+.border-deep-orange {
+    border: 1px solid #ff5722 !important
+}
+.border-deep-orange.border-lighten-5 {
+    border: 1px solid #fbe9e7 !important
+}
+.border-deep-orange.border-lighten-4 {
+    border: 1px solid #ffccbc !important
+}
+.border-deep-orange.border-lighten-3 {
+    border: 1px solid #ffab91 !important
+}
+.border-deep-orange.border-lighten-2 {
+    border: 1px solid #ff8a65 !important
+}
+.border-deep-orange.border-lighten-1 {
+    border: 1px solid #ff7043 !important
+}
+.border-deep-orange.border-darken-1 {
+    border: 1px solid #f4511e !important
+}
+.border-deep-orange.border-darken-2 {
+    border: 1px solid #e64a19 !important
+}
+.border-deep-orange.border-darken-3 {
+    border: 1px solid #d84315 !important
+}
+.border-deep-orange.border-darken-4 {
+    border: 1px solid #bf360c !important
+}
+.border-deep-orange.border-accent-1 {
+    border: 1px solid #ff9e80 !important
+}
+.border-deep-orange.border-accent-2 {
+    border: 1px solid #ff6e40 !important
+}
+.border-deep-orange.border-accent-3 {
+    border: 1px solid #ff3d00 !important
+}
+.border-deep-orange.border-accent-4 {
+    border: 1px solid #dd2c00 !important
+}
+.border-brown {
+    border: 1px solid #795548 !important
+}
+.border-brown.border-lighten-5 {
+    border: 1px solid #efebe9 !important
+}
+.border-brown.border-lighten-4 {
+    border: 1px solid #d7ccc8 !important
+}
+.border-brown.border-lighten-3 {
+    border: 1px solid #bcaaa4 !important
+}
+.border-brown.border-lighten-2 {
+    border: 1px solid #a1887f !important
+}
+.border-brown.border-lighten-1 {
+    border: 1px solid #8d6e63 !important
+}
+.border-brown.border-darken-1 {
+    border: 1px solid #6d4c41 !important
+}
+.border-brown.border-darken-2 {
+    border: 1px solid #5d4037 !important
+}
+.border-brown.border-darken-3 {
+    border: 1px solid #4e342e !important
+}
+.border-brown.border-darken-4 {
+    border: 1px solid #3e2723 !important
+}
+.border-blue-grey {
+    border: 1px solid #607d8b !important
+}
+.border-blue-grey.border-lighten-5 {
+    border: 1px solid #eceff1 !important
+}
+.border-blue-grey.border-lighten-4 {
+    border: 1px solid #cfd8dc !important
+}
+.border-blue-grey.border-lighten-3 {
+    border: 1px solid #b0bec5 !important
+}
+.border-blue-grey.border-lighten-2 {
+    border: 1px solid #90a4ae !important
+}
+.border-blue-grey.border-lighten-1 {
+    border: 1px solid #78909c !important
+}
+.border-blue-grey.border-darken-1 {
+    border: 1px solid #546e7a !important
+}
+.border-blue-grey.border-darken-2 {
+    border: 1px solid #455a64 !important
+}
+.border-blue-grey.border-darken-3 {
+    border: 1px solid #37474f !important
+}
+.border-blue-grey.border-darken-4 {
+    border: 1px solid #263238 !important
+}
+.border-grey {
+    border: 1px solid #9e9e9e !important
+}
+.border-grey.border-lighten-5 {
+    border: 1px solid #fafafa !important
+}
+.border-grey.border-lighten-4 {
+    border: 1px solid #f5f5f5 !important
+}
+.border-grey.border-lighten-3 {
+    border: 1px solid #eee !important
+}
+.border-grey.border-lighten-2 {
+    border: 1px solid #e0e0e0 !important
+}
+.border-grey.border-lighten-1 {
+    border: 1px solid #bdbdbd !important
+}
+.border-grey.border-darken-1 {
+    border: 1px solid #757575 !important
+}
+.border-grey.border-darken-2 {
+    border: 1px solid #616161 !important
+}
+.border-grey.border-darken-3 {
+    border: 1px solid #424242 !important
+}
+.border-grey.border-darken-4 {
+    border: 1px solid #212121 !important
+}
+.border-black {
+    border: 1px solid #000 !important
+}
+.border-white {
+    border: 1px solid #fff !important
+}
+
+.hover-red:hover {
+    background-color: #F44336 !important
+}
+.hover-red.hover-lighten-5:hover {
+    background-color: #FFEBEE !important
+}
+.hover-red.hover-lighten-4:hover {
+    background-color: #FFCDD2 !important
+}
+.hover-red.hover-lighten-3:hover {
+    background-color: #EF9A9A !important
+}
+.hover-red.hover-lighten-2:hover {
+    background-color: #E57373 !important
+}
+.hover-red.hover-lighten-1:hover {
+    background-color: #EF5350 !important
+}
+.hover-red.hover-darken-1:hover {
+    background-color: #E53935 !important
+}
+.hover-red.hover-darken-2:hover {
+    background-color: #D32F2F !important
+}
+.hover-red.hover-darken-3:hover {
+    background-color: #C62828 !important
+}
+.hover-red.hover-darken-4:hover {
+    background-color: #B71C1C !important
+}
+.hover-red.hover-accent-1:hover {
+    background-color: #FF8A80 !important
+}
+.hover-red.hover-accent-2:hover {
+    background-color: #FF5252 !important
+}
+.hover-red.hover-accent-3:hover {
+    background-color: #FF1744 !important
+}
+.hover-red.hover-accent-4:hover {
+    background-color: #D50000 !important
+}
+.hover-pink:hover {
+    background-color: #e91e63 !important
+}
+.hover-pink.hover-lighten-5:hover {
+    background-color: #fce4ec !important
+}
+.hover-pink.hover-lighten-4:hover {
+    background-color: #f8bbd0 !important
+}
+.hover-pink.hover-lighten-3:hover {
+    background-color: #f48fb1 !important
+}
+.hover-pink.hover-lighten-2:hover {
+    background-color: #f06292 !important
+}
+.hover-pink.hover-lighten-1:hover {
+    background-color: #ec407a !important
+}
+.hover-pink.hover-darken-1:hover {
+    background-color: #d81b60 !important
+}
+.hover-pink-text.hover-text-darken-2:hover {
+    color: #c2185b !important
+}
+.hover-pink.hover-darken-3:hover {
+    background-color: #ad1457 !important
+}
+.hover-pink.hover-darken-4:hover {
+    background-color: #880e4f !important
+}
+.hover-pink.hover-accent-1:hover {
+    background-color: #ff80ab !important
+}
+.hover-pink.hover-accent-2:hover {
+    background-color: #ff4081 !important
+}
+.hover-pink.hover-accent-3:hover {
+    background-color: #f50057 !important
+}
+.hover-pink.hover-accent-4:hover {
+    background-color: #c51162 !important
+}
+.hover-purple:hover {
+    background-color: #9c27b0 !important
+}
+.hover-purple.hover-lighten-5:hover {
+    background-color: #f3e5f5 !important
+}
+.hover-purple.hover-lighten-4:hover {
+    background-color: #e1bee7 !important
+}
+.hover-purple.hover-lighten-3:hover {
+    background-color: #ce93d8 !important
+}
+.hover-purple.hover-lighten-2:hover {
+    background-color: #ba68c8 !important
+}
+.hover-purple.hover-lighten-1:hover {
+    background-color: #ab47bc !important
+}
+.hover-purple.hover-darken-1:hover {
+    background-color: #8e24aa !important
+}
+.hover-purple.hover-darken-2:hover {
+    background-color: #7b1fa2 !important
+}
+.hover-purple.hover-darken-3:hover {
+    background-color: #6a1b9a !important
+}
+.hover-purple.hover-darken-4:hover {
+    background-color: #4a148c !important
+}
+.hover-purple.hover-accent-1:hover {
+    background-color: #ea80fc !important
+}
+.hover-purple.hover-accent-2:hover {
+    background-color: #e040fb !important
+}
+.hover-purple.hover-accent-3:hover {
+    background-color: #d500f9 !important
+}
+.hover-purple.hover-accent-4:hover {
+    background-color: #a0f !important
+}
+.hover-deep-purple:hover {
+    background-color: #673ab7 !important
+}
+.hover-deep-purple.hover-lighten-5:hover {
+    background-color: #ede7f6 !important
+}
+.hover-deep-purple.hover-lighten-4:hover {
+    background-color: #d1c4e9 !important
+}
+.hover-deep-purple.hover-lighten-3:hover {
+    background-color: #b39ddb !important
+}
+.hover-deep-purple.hover-lighten-2:hover {
+    background-color: #9575cd !important
+}
+.hover-deep-purple.hover-lighten-1:hover {
+    background-color: #7e57c2 !important
+}
+.hover-deep-purple.hover-darken-1:hover {
+    background-color: #5e35b1 !important
+}
+.hover-deep-purple.hover-darken-2:hover {
+    background-color: #512da8 !important
+}
+.hover-deep-purple.hover-darken-3:hover {
+    background-color: #4527a0 !important
+}
+.hover-deep-purple.hover-darken-4:hover {
+    background-color: #311b92 !important
+}
+.hover-deep-purple.hover-accent-1:hover {
+    background-color: #b388ff !important
+}
+.hover-deep-purple.hover-accent-2:hover {
+    background-color: #7c4dff !important
+}
+.hover-deep-purple.hover-accent-3:hover {
+    background-color: #651fff !important
+}
+.hover-deep-purple.hover-accent-4:hover {
+    background-color: #6200ea !important
+}
+.hover-indigo:hover {
+    background-color: #3f51b5 !important
+}
+.hover-indigo.hover-lighten-5:hover {
+    background-color: #e8eaf6 !important
+}
+.hover-indigo.hover-lighten-4:hover {
+    background-color: #c5cae9 !important
+}
+.hover-indigo.hover-lighten-3:hover {
+    background-color: #9fa8da !important
+}
+.hover-indigo.hover-lighten-2:hover {
+    background-color: #7986cb !important
+}
+.hover-indigo.hover-lighten-1:hover {
+    background-color: #5c6bc0 !important
+}
+.hover-indigo.hover-darken-1:hover {
+    background-color: #3949ab !important
+}
+.hover-indigo.hover-darken-2:hover {
+    background-color: #303f9f !important
+}
+.hover-indigo.hover-darken-3:hover {
+    background-color: #283593 !important
+}
+.hover-indigo.hover-darken-4:hover {
+    background-color: #1a237e !important
+}
+.hover-indigo.hover-accent-1:hover {
+    background-color: #8c9eff !important
+}
+.hover-indigo.hover-accent-2:hover {
+    background-color: #536dfe !important
+}
+.hover-indigo.hover-accent-3:hover {
+    background-color: #3d5afe !important
+}
+.hover-indigo.hover-accent-4:hover {
+    background-color: #304ffe !important
+}
+.hover-blue:hover {
+    background-color: #2196F3 !important
+}
+.hover-blue.hover-lighten-5:hover {
+    background-color: #E3F2FD !important
+}
+.hover-blue.hover-lighten-4:hover {
+    background-color: #BBDEFB !important
+}
+.hover-blue.hover-lighten-3:hover {
+    background-color: #90CAF9 !important
+}
+.hover-blue.hover-lighten-2:hover {
+    background-color: #64B5F6 !important
+}
+.hover-blue.hover-lighten-1:hover {
+    background-color: #42A5F5 !important
+}
+.hover-blue.hover-darken-1:hover {
+    background-color: #1E88E5 !important
+}
+.hover-blue.hover-darken-2:hover {
+    background-color: #1976D2 !important
+}
+.hover-blue.hover-darken-3:hover {
+    background-color: #1565C0 !important
+}
+.hover-blue.hover-darken-4:hover {
+    background-color: #0D47A1 !important
+}
+.hover-blue.hover-accent-1:hover {
+    background-color: #82B1FF !important
+}
+.hover-blue.hover-accent-2:hover {
+    background-color: #448AFF !important
+}
+.hover-blue.hover-accent-3:hover {
+    background-color: #2979FF !important
+}
+.hover-blue.hover-accent-4:hover {
+    background-color: #2962FF !important
+}
+.hover-light-blue:hover {
+    background-color: #03a9f4 !important
+}
+.hover-light-blue.hover-lighten-5:hover {
+    background-color: #e1f5fe !important
+}
+.hover-light-blue.hover-lighten-4:hover {
+    background-color: #b3e5fc !important
+}
+.hover-light-blue.hover-lighten-3:hover {
+    background-color: #81d4fa !important
+}
+.hover-light-blue.hover-lighten-2:hover {
+    background-color: #4fc3f7 !important
+}
+.hover-light-blue.hover-lighten-1:hover {
+    background-color: #29b6f6 !important
+}
+.hover-light-blue.hover-darken-1:hover {
+    background-color: #039be5 !important
+}
+.hover-light-blue.hover-darken-2:hover {
+    background-color: #0288d1 !important
+}
+.hover-light-blue.hover-darken-3:hover {
+    background-color: #0277bd !important
+}
+.hover-light-blue.hover-darken-4:hover {
+    background-color: #01579b !important
+}
+.hover-light-blue.hover-accent-1:hover {
+    background-color: #80d8ff !important
+}
+.hover-light-blue.hover-accent-2:hover {
+    background-color: #40c4ff !important
+}
+.hover-light-blue.hover-accent-3:hover {
+    background-color: #00b0ff !important
+}
+.hover-light-blue.hover-accent-4:hover {
+    background-color: #0091ea !important
+}
+.hover-cyan:hover {
+    background-color: #00bcd4 !important
+}
+.hover-cyan.hover-lighten-5:hover {
+    background-color: #e0f7fa !important
+}
+.hover-cyan.hover-lighten-4:hover {
+    background-color: #b2ebf2 !important
+}
+.hover-cyan.hover-lighten-3:hover {
+    background-color: #80deea !important
+}
+.hover-cyan.hover-lighten-2:hover {
+    background-color: #4dd0e1 !important
+}
+.hover-cyan.hover-lighten-1:hover {
+    background-color: #26c6da !important
+}
+.hover-cyan.hover-darken-1:hover {
+    background-color: #00acc1 !important
+}
+.hover-cyan.hover-darken-2:hover {
+    background-color: #0097a7 !important
+}
+.hover-cyan.hover-darken-3:hover {
+    background-color: #00838f !important
+}
+.hover-cyan.hover-darken-4:hover {
+    background-color: #006064 !important
+}
+.hover-cyan.hover-accent-1:hover {
+    background-color: #84ffff !important
+}
+.hover-cyan.hover-accent-2:hover {
+    background-color: #18ffff !important
+}
+.hover-cyan.hover-accent-3:hover {
+    background-color: #00e5ff !important
+}
+.hover-cyan.hover-accent-4:hover {
+    background-color: #00b8d4 !important
+}
+.hover-teal:hover {
+    background-color: #009688 !important
+}
+.hover-teal.hover-lighten-5:hover {
+    background-color: #e0f2f1 !important
+}
+.hover-teal.hover-lighten-4:hover {
+    background-color: #b2dfdb !important
+}
+.hover-teal.hover-lighten-3:hover {
+    background-color: #80cbc4 !important
+}
+.hover-teal.hover-lighten-2:hover {
+    background-color: #4db6ac !important
+}
+.hover-teal.hover-lighten-1:hover {
+    background-color: #26a69a !important
+}
+.hover-teal.hover-darken-1:hover {
+    background-color: #00897b !important
+}
+.hover-teal.hover-darken-2:hover {
+    background-color: #00796b !important
+}
+.hover-teal.hover-darken-3:hover {
+    background-color: #00695c !important
+}
+.hover-teal.hover-darken-4:hover {
+    background-color: #004d40 !important
+}
+.hover-teal.hover-accent-1:hover {
+    background-color: #a7ffeb !important
+}
+.hover-teal.hover-accent-2:hover {
+    background-color: #64ffda !important
+}
+.hover-teal.hover-accent-3:hover {
+    background-color: #1de9b6 !important
+}
+.hover-teal.hover-accent-4:hover {
+    background-color: #00bfa5 !important
+}
+.hover-green:hover {
+    background-color: #4CAF50 !important
+}
+.hover-green.hover-lighten-5:hover {
+    background-color: #E8F5E9 !important
+}
+.hover-green.hover-lighten-4:hover {
+    background-color: #C8E6C9 !important
+}
+.hover-green.hover-lighten-3:hover {
+    background-color: #A5D6A7 !important
+}
+.hover-green.hover-lighten-2:hover {
+    background-color: #81C784 !important
+}
+.hover-green.hover-lighten-1:hover {
+    background-color: #66BB6A !important
+}
+.hover-green.hover-darken-1:hover {
+    background-color: #43A047 !important
+}
+.hover-green.hover-darken-2:hover {
+    background-color: #388E3C !important
+}
+.hover-green.hover-darken-3:hover {
+    background-color: #2E7D32 !important
+}
+.hover-green.hover-darken-4:hover {
+    background-color: #1B5E20 !important
+}
+.hover-green.hover-accent-1:hover {
+    background-color: #B9F6CA !important
+}
+.hover-green.hover-accent-2:hover {
+    background-color: #69F0AE !important
+}
+.hover-green.hover-accent-3:hover {
+    background-color: #00E676 !important
+}
+.hover-green.hover-accent-4:hover {
+    background-color: #00C853 !important
+}
+.hover-light-green:hover {
+    background-color: #8bc34a !important
+}
+.hover-light-green.hover-lighten-5:hover {
+    background-color: #f1f8e9 !important
+}
+.hover-light-green.hover-lighten-4:hover {
+    background-color: #dcedc8 !important
+}
+.hover-light-green.hover-lighten-3:hover {
+    background-color: #c5e1a5 !important
+}
+.hover-light-green.hover-lighten-2:hover {
+    background-color: #aed581 !important
+}
+.hover-light-green.hover-lighten-1:hover {
+    background-color: #9ccc65 !important
+}
+.hover-light-green.hover-darken-1:hover {
+    background-color: #7cb342 !important
+}
+.hover-light-green.hover-darken-2:hover {
+    background-color: #689f38 !important
+}
+.hover-light-green.hover-darken-3:hover {
+    background-color: #558b2f !important
+}
+.hover-light-green.hover-darken-4:hover {
+    background-color: #33691e !important
+}
+.hover-light-green.hover-accent-1:hover {
+    background-color: #ccff90 !important
+}
+.hover-light-green.hover-accent-2:hover {
+    background-color: #b2ff59 !important
+}
+.hover-light-green.hover-accent-3:hover {
+    background-color: #76ff03 !important
+}
+.hover-light-green.hover-accent-4:hover {
+    background-color: #64dd17 !important
+}
+.hover-lime:hover {
+    background-color: #cddc39 !important
+}
+.hover-lime.hover-lighten-5:hover {
+    background-color: #f9fbe7 !important
+}
+.hover-lime.hover-lighten-4:hover {
+    background-color: #f0f4c3 !important
+}
+.hover-lime.hover-lighten-3:hover {
+    background-color: #e6ee9c !important
+}
+.hover-lime.hover-lighten-2:hover {
+    background-color: #dce775 !important
+}
+.hover-lime.hover-lighten-1:hover {
+    background-color: #d4e157 !important
+}
+.hover-lime.hover-darken-1:hover {
+    background-color: #c0ca33 !important
+}
+.hover-lime.hover-darken-2:hover {
+    background-color: #afb42b !important
+}
+.hover-lime.hover-darken-3:hover {
+    background-color: #9e9d24 !important
+}
+.hover-lime.hover-darken-4:hover {
+    background-color: #827717 !important
+}
+.hover-lime.hover-accent-1:hover {
+    background-color: #f4ff81 !important
+}
+.hover-lime.hover-accent-2:hover {
+    background-color: #eeff41 !important
+}
+.hover-lime.hover-accent-3:hover {
+    background-color: #c6ff00 !important
+}
+.hover-lime.hover-accent-4:hover {
+    background-color: #aeea00 !important
+}
+.hover-yellow:hover {
+    background-color: #ffeb3b !important
+}
+.hover-yellow.hover-lighten-5:hover {
+    background-color: #fffde7 !important
+}
+.hover-yellow.hover-lighten-4:hover {
+    background-color: #fff9c4 !important
+}
+.hover-yellow.hover-lighten-3:hover {
+    background-color: #fff59d !important
+}
+.hover-yellow.hover-lighten-2:hover {
+    background-color: #fff176 !important
+}
+.hover-yellow.hover-lighten-1:hover {
+    background-color: #ffee58 !important
+}
+.hover-yellow.hover-darken-1:hover {
+    background-color: #fdd835 !important
+}
+.hover-yellow.hover-darken-2:hover {
+    background-color: #fbc02d !important
+}
+.hover-yellow.hover-darken-3:hover {
+    background-color: #f9a825 !important
+}
+.hover-yellow.hover-darken-4:hover {
+    background-color: #f57f17 !important
+}
+.hover-yellow.hover-accent-1:hover {
+    background-color: #ffff8d !important
+}
+.hover-yellow.hover-accent-2:hover {
+    background-color: #ff0 !important
+}
+.hover-yellow.hover-accent-3:hover {
+    background-color: #ffea00 !important
+}
+.hover-yellow.hover-accent-4:hover {
+    background-color: #ffd600 !important
+}
+.hover-amber:hover {
+    background-color: #ffc107 !important
+}
+.hover-amber.hover-lighten-5:hover {
+    background-color: #fff8e1 !important
+}
+.hover-amber.hover-lighten-4:hover {
+    background-color: #ffecb3 !important
+}
+.hover-amber.hover-lighten-3:hover {
+    background-color: #ffe082 !important
+}
+.hover-amber.hover-lighten-2:hover {
+    background-color: #ffd54f !important
+}
+.hover-amber.hover-lighten-1:hover {
+    background-color: #ffca28 !important
+}
+.hover-amber.hover-darken-1:hover {
+    background-color: #ffb300 !important
+}
+.hover-amber.hover-darken-2:hover {
+    background-color: #ffa000 !important
+}
+.hover-amber.hover-darken-3:hover {
+    background-color: #ff8f00 !important
+}
+.hover-amber.hover-darken-4:hover {
+    background-color: #ff6f00 !important
+}
+.hover-amber.hover-accent-1:hover {
+    background-color: #ffe57f !important
+}
+.hover-amber.hover-accent-2:hover {
+    background-color: #ffd740 !important
+}
+.hover-amber.hover-accent-3:hover {
+    background-color: #ffc400 !important
+}
+.hover-amber.hover-accent-4:hover {
+    background-color: #ffab00 !important
+}
+.hover-orange:hover {
+    background-color: #ff9800 !important
+}
+.hover-orange-text:hover {
+    color: #ff9800 !important
+}
+.hover-orange.hover-lighten-5:hover {
+    background-color: #fff3e0 !important
+}
+.hover-orange.hover-lighten-4:hover {
+    background-color: #ffe0b2 !important
+}
+.hover-orange.hover-lighten-3:hover {
+    background-color: #ffcc80 !important
+}
+.hover-orange.hover-lighten-2:hover {
+    background-color: #ffb74d !important
+}
+.hover-orange.hover-lighten-1:hover {
+    background-color: #ffa726 !important
+}
+.hover-orange.hover-darken-1:hover {
+    background-color: #fb8c00 !important
+}
+.hover-orange.hover-darken-2:hover {
+    background-color: #f57c00 !important
+}
+.hover-orange.hover-darken-3:hover {
+    background-color: #ef6c00 !important
+}
+.hover-orange.hover-darken-4:hover {
+    background-color: #e65100 !important
+}
+.hover-orange.hover-accent-1:hover {
+    background-color: #ffd180 !important
+}
+.hover-orange.hover-accent-2:hover {
+    background-color: #ffab40 !important
+}
+.hover-orange.hover-accent-3:hover {
+    background-color: #ff9100 !important
+}
+.hover-orange.hover-accent-4:hover {
+    background-color: #ff6d00 !important
+}
+.hover-deep-orange:hover {
+    background-color: #ff5722 !important
+}
+.hover-deep-orange.hover-lighten-5:hover {
+    background-color: #fbe9e7 !important
+}
+.hover-deep-orange.hover-lighten-4:hover {
+    background-color: #ffccbc !important
+}
+.hover-deep-orange.hover-lighten-3:hover {
+    background-color: #ffab91 !important
+}
+.hover-deep-orange.hover-lighten-2:hover {
+    background-color: #ff8a65 !important
+}
+.hover-deep-orange.hover-lighten-1:hover {
+    background-color: #ff7043 !important
+}
+.hover-deep-orange.hover-darken-1:hover {
+    background-color: #f4511e !important
+}
+.hover-deep-orange.hover-darken-2:hover {
+    background-color: #e64a19 !important
+}
+.hover-deep-orange.hover-darken-3:hover {
+    background-color: #d84315 !important
+}
+.hover-deep-orange.hover-darken-4:hover {
+    background-color: #bf360c !important
+}
+.hover-deep-orange.hover-accent-1:hover {
+    background-color: #ff9e80 !important
+}
+.hover-deep-orange.hover-accent-2:hover {
+    background-color: #ff6e40 !important
+}
+.hover-deep-orange.hover-accent-3:hover {
+    background-color: #ff3d00 !important
+}
+.hover-deep-orange.hover-accent-4:hover {
+    background-color: #dd2c00 !important
+}
+.hover-brown:hover {
+    background-color: #795548 !important
+}
+.hover-brown.hover-lighten-5:hover {
+    background-color: #efebe9 !important
+}
+.hover-brown.hover-lighten-4:hover {
+    background-color: #d7ccc8 !important
+}
+.hover-brown.hover-lighten-3:hover {
+    background-color: #bcaaa4 !important
+}
+.hover-brown.hover-lighten-2:hover {
+    background-color: #a1887f !important
+}
+.hover-brown.hover-lighten-1:hover {
+    background-color: #8d6e63 !important
+}
+.hover-brown.hover-darken-1:hover {
+    background-color: #6d4c41 !important
+}
+.hover-brown.hover-darken-2:hover {
+    background-color: #5d4037 !important
+}
+.hover-brown.hover-darken-3:hover {
+    background-color: #4e342e !important
+}
+.hover-brown.hover-darken-4:hover {
+    background-color: #3e2723 !important
+}
+.hover-blue-grey:hover {
+    background-color: #607d8b !important
+}
+.hover-blue-grey.hover-lighten-5:hover {
+    background-color: #eceff1 !important
+}
+.hover-blue-grey.hover-lighten-4:hover {
+    background-color: #cfd8dc !important
+}
+.hover-blue-grey.hover-lighten-3:hover {
+    background-color: #b0bec5 !important
+}
+.hover-blue-grey.hover-lighten-2:hover {
+    background-color: #90a4ae !important
+}
+.hover-blue-grey.hover-lighten-1:hover {
+    background-color: #78909c !important
+}
+.hover-blue-grey.hover-darken-1:hover {
+    background-color: #546e7a !important
+}
+.hover-blue-grey.hover-darken-2:hover {
+    background-color: #455a64 !important
+}
+.hover-blue-grey.hover-darken-3:hover {
+    background-color: #37474f !important
+}
+.hover-blue-grey.hover-darken-4:hover {
+    background-color: #263238 !important
+}
+.hover-grey:hover {
+    background-color: #9e9e9e !important
+}
+.hover-grey.hover-lighten-5:hover {
+    background-color: #fafafa !important
+}
+.hover-grey.hover-lighten-4:hover {
+    background-color: #f5f5f5 !important
+}
+.hover-grey.hover-lighten-3:hover {
+    background-color: #eee !important
+}
+.hover-grey.hover-lighten-2:hover {
+    background-color: #e0e0e0 !important
+}
+.hover-grey.hover-lighten-1:hover {
+    background-color: #bdbdbd !important
+}
+.hover-grey.hover-darken-1:hover {
+    background-color: #757575 !important
+}
+.hover-grey.hover-darken-2:hover {
+    background-color: #616161 !important
+}
+.hover-grey.hover-darken-3:hover {
+    background-color: #424242 !important
+}
+.hover-grey.hover-darken-4:hover {
+    background-color: #212121 !important
+}
+.hover-black:hover {
+    background-color: #000 !important
+}
+.hover-white:hover {
+    background-color: #fff !important
+}
+
+.hover-text-red:hover {
+    color: #F44336 !important
+}
+.hover-text-red.hover-text-lighten-5:hover {
+    color: #FFEBEE !important
+}
+.hover-text-red.hover-text-lighten-4:hover {
+    color: #FFCDD2 !important
+}
+.hover-text-red.hover-text-lighten-3:hover {
+    color: #EF9A9A !important
+}
+.hover-text-red.hover-text-lighten-2:hover {
+    color: #E57373 !important
+}
+.hover-text-red.hover-text-lighten-1:hover {
+    color: #EF5350 !important
+}
+.hover-text-red.hover-text-darken-1:hover {
+    color: #E53935 !important
+}
+.hover-text-red.hover-text-darken-2:hover {
+    color: #D32F2F !important
+}
+.hover-text-red.hover-text-darken-3:hover {
+    color: #C62828 !important
+}
+.hover-text-red.hover-text-darken-4:hover {
+    color: #B71C1C !important
+}
+.hover-text-red.hover-text-accent-1:hover {
+    color: #FF8A80 !important
+}
+.hover-text-red.hover-text-accent-2:hover {
+    color: #FF5252 !important
+}
+.hover-text-red.hover-text-accent-3:hover {
+    color: #FF1744 !important
+}
+.hover-text-red.hover-text-accent-4:hover {
+    color: #D50000 !important
+}
+.hover-text-pink:hover {
+    color: #e91e63 !important
+}
+.hover-text-pink.hover-text-lighten-5:hover {
+    color: #fce4ec !important
+}
+.hover-text-pink.hover-text-lighten-4:hover {
+    color: #f8bbd0 !important
+}
+.hover-text-pink.hover-text-lighten-3:hover {
+    color: #f48fb1 !important
+}
+.hover-text-pink.hover-text-lighten-2:hover {
+    color: #f06292 !important
+}
+.hover-text-pink.hover-text-lighten-1:hover {
+    color: #ec407a !important
+}
+.hover-text-pink.hover-text-darken-1:hover {
+    color: #d81b60 !important
+}
+.hover-text-pink-text.hover-text-text-darken-2:hover {
+    color: #c2185b !important
+}
+.hover-text-pink.hover-text-darken-3:hover {
+    color: #ad1457 !important
+}
+.hover-text-pink.hover-text-darken-4:hover {
+    color: #880e4f !important
+}
+.hover-text-pink.hover-text-accent-1:hover {
+    color: #ff80ab !important
+}
+.hover-text-pink.hover-text-accent-2:hover {
+    color: #ff4081 !important
+}
+.hover-text-pink.hover-text-accent-3:hover {
+    color: #f50057 !important
+}
+.hover-text-pink.hover-text-accent-4:hover {
+    color: #c51162 !important
+}
+.hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+.hover-text-purple.hover-text-lighten-5:hover {
+    color: #f3e5f5 !important
+}
+.hover-text-purple.hover-text-lighten-4:hover {
+    color: #e1bee7 !important
+}
+.hover-text-purple.hover-text-lighten-3:hover {
+    color: #ce93d8 !important
+}
+.hover-text-purple.hover-text-lighten-2:hover {
+    color: #ba68c8 !important
+}
+.hover-text-purple.hover-text-lighten-1:hover {
+    color: #ab47bc !important
+}
+.hover-text-purple.hover-text-darken-1:hover {
+    color: #8e24aa !important
+}
+.hover-text-purple.hover-text-darken-2:hover {
+    color: #7b1fa2 !important
+}
+.hover-text-purple.hover-text-darken-3:hover {
+    color: #6a1b9a !important
+}
+.hover-text-purple.hover-text-darken-4:hover {
+    color: #4a148c !important
+}
+.hover-text-purple.hover-text-accent-1:hover {
+    color: #ea80fc !important
+}
+.hover-text-purple.hover-text-accent-2:hover {
+    color: #e040fb !important
+}
+.hover-text-purple.hover-text-accent-3:hover {
+    color: #d500f9 !important
+}
+.hover-text-purple.hover-text-accent-4:hover {
+    color: #a0f !important
+}
+.hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+.hover-text-deep-purple.hover-text-lighten-5:hover {
+    color: #ede7f6 !important
+}
+.hover-text-deep-purple.hover-text-lighten-4:hover {
+    color: #d1c4e9 !important
+}
+.hover-text-deep-purple.hover-text-lighten-3:hover {
+    color: #b39ddb !important
+}
+.hover-text-deep-purple.hover-text-lighten-2:hover {
+    color: #9575cd !important
+}
+.hover-text-deep-purple.hover-text-lighten-1:hover {
+    color: #7e57c2 !important
+}
+.hover-text-deep-purple.hover-text-darken-1:hover {
+    color: #5e35b1 !important
+}
+.hover-text-deep-purple.hover-text-darken-2:hover {
+    color: #512da8 !important
+}
+.hover-text-deep-purple.hover-text-darken-3:hover {
+    color: #4527a0 !important
+}
+.hover-text-deep-purple.hover-text-darken-4:hover {
+    color: #311b92 !important
+}
+.hover-text-deep-purple.hover-text-accent-1:hover {
+    color: #b388ff !important
+}
+.hover-text-deep-purple.hover-text-accent-2:hover {
+    color: #7c4dff !important
+}
+.hover-text-deep-purple.hover-text-accent-3:hover {
+    color: #651fff !important
+}
+.hover-text-deep-purple.hover-text-accent-4:hover {
+    color: #6200ea !important
+}
+.hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+.hover-text-indigo.hover-text-lighten-5:hover {
+    color: #e8eaf6 !important
+}
+.hover-text-indigo.hover-text-lighten-4:hover {
+    color: #c5cae9 !important
+}
+.hover-text-indigo.hover-text-lighten-3:hover {
+    color: #9fa8da !important
+}
+.hover-text-indigo.hover-text-lighten-2:hover {
+    color: #7986cb !important
+}
+.hover-text-indigo.hover-text-lighten-1:hover {
+    color: #5c6bc0 !important
+}
+.hover-text-indigo.hover-text-darken-1:hover {
+    color: #3949ab !important
+}
+.hover-text-indigo.hover-text-darken-2:hover {
+    color: #303f9f !important
+}
+.hover-text-indigo.hover-text-darken-3:hover {
+    color: #283593 !important
+}
+.hover-text-indigo.hover-text-darken-4:hover {
+    color: #1a237e !important
+}
+.hover-text-indigo.hover-text-accent-1:hover {
+    color: #8c9eff !important
+}
+.hover-text-indigo.hover-text-accent-2:hover {
+    color: #536dfe !important
+}
+.hover-text-indigo.hover-text-accent-3:hover {
+    color: #3d5afe !important
+}
+.hover-text-indigo.hover-text-accent-4:hover {
+    color: #304ffe !important
+}
+.hover-text-blue:hover {
+    color: #2196F3 !important
+}
+.hover-text-blue.hover-text-lighten-5:hover {
+    color: #E3F2FD !important
+}
+.hover-text-blue.hover-text-lighten-4:hover {
+    color: #BBDEFB !important
+}
+.hover-text-blue.hover-text-lighten-3:hover {
+    color: #90CAF9 !important
+}
+.hover-text-blue.hover-text-lighten-2:hover {
+    color: #64B5F6 !important
+}
+.hover-text-blue.hover-text-lighten-1:hover {
+    color: #42A5F5 !important
+}
+.hover-text-blue.hover-text-darken-1:hover {
+    color: #1E88E5 !important
+}
+.hover-text-blue.hover-text-darken-2:hover {
+    color: #1976D2 !important
+}
+.hover-text-blue.hover-text-darken-3:hover {
+    color: #1565C0 !important
+}
+.hover-text-blue.hover-text-darken-4:hover {
+    color: #0D47A1 !important
+}
+.hover-text-blue.hover-text-accent-1:hover {
+    color: #82B1FF !important
+}
+.hover-text-blue.hover-text-accent-2:hover {
+    color: #448AFF !important
+}
+.hover-text-blue.hover-text-accent-3:hover {
+    color: #2979FF !important
+}
+.hover-text-blue.hover-text-accent-4:hover {
+    color: #2962FF !important
+}
+.hover-text-light-blue:hover {
+    color: #03a9f4 !important
+}
+.hover-text-light-blue.hover-text-lighten-5:hover {
+    color: #e1f5fe !important
+}
+.hover-text-light-blue.hover-text-lighten-4:hover {
+    color: #b3e5fc !important
+}
+.hover-text-light-blue.hover-text-lighten-3:hover {
+    color: #81d4fa !important
+}
+.hover-text-light-blue.hover-text-lighten-2:hover {
+    color: #4fc3f7 !important
+}
+.hover-text-light-blue.hover-text-lighten-1:hover {
+    color: #29b6f6 !important
+}
+.hover-text-light-blue.hover-text-darken-1:hover {
+    color: #039be5 !important
+}
+.hover-text-light-blue.hover-text-darken-2:hover {
+    color: #0288d1 !important
+}
+.hover-text-light-blue.hover-text-darken-3:hover {
+    color: #0277bd !important
+}
+.hover-text-light-blue.hover-text-darken-4:hover {
+    color: #01579b !important
+}
+.hover-text-light-blue.hover-text-accent-1:hover {
+    color: #80d8ff !important
+}
+.hover-text-light-blue.hover-text-accent-2:hover {
+    color: #40c4ff !important
+}
+.hover-text-light-blue.hover-text-accent-3:hover {
+    color: #00b0ff !important
+}
+.hover-text-light-blue.hover-text-accent-4:hover {
+    color: #0091ea !important
+}
+.hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+.hover-text-cyan.hover-text-lighten-5:hover {
+    color: #e0f7fa !important
+}
+.hover-text-cyan.hover-text-lighten-4:hover {
+    color: #b2ebf2 !important
+}
+.hover-text-cyan.hover-text-lighten-3:hover {
+    color: #80deea !important
+}
+.hover-text-cyan.hover-text-lighten-2:hover {
+    color: #4dd0e1 !important
+}
+.hover-text-cyan.hover-text-lighten-1:hover {
+    color: #26c6da !important
+}
+.hover-text-cyan.hover-text-darken-1:hover {
+    color: #00acc1 !important
+}
+.hover-text-cyan.hover-text-darken-2:hover {
+    color: #0097a7 !important
+}
+.hover-text-cyan.hover-text-darken-3:hover {
+    color: #00838f !important
+}
+.hover-text-cyan.hover-text-darken-4:hover {
+    color: #006064 !important
+}
+.hover-text-cyan.hover-text-accent-1:hover {
+    color: #84ffff !important
+}
+.hover-text-cyan.hover-text-accent-2:hover {
+    color: #18ffff !important
+}
+.hover-text-cyan.hover-text-accent-3:hover {
+    color: #00e5ff !important
+}
+.hover-text-cyan.hover-text-accent-4:hover {
+    color: #00b8d4 !important
+}
+.hover-text-teal:hover {
+    color: #009688 !important
+}
+.hover-text-teal.hover-text-lighten-5:hover {
+    color: #e0f2f1 !important
+}
+.hover-text-teal.hover-text-lighten-4:hover {
+    color: #b2dfdb !important
+}
+.hover-text-teal.hover-text-lighten-3:hover {
+    color: #80cbc4 !important
+}
+.hover-text-teal.hover-text-lighten-2:hover {
+    color: #4db6ac !important
+}
+.hover-text-teal.hover-text-lighten-1:hover {
+    color: #26a69a !important
+}
+.hover-text-teal.hover-text-darken-1:hover {
+    color: #00897b !important
+}
+.hover-text-teal.hover-text-darken-2:hover {
+    color: #00796b !important
+}
+.hover-text-teal.hover-text-darken-3:hover {
+    color: #00695c !important
+}
+.hover-text-teal.hover-text-darken-4:hover {
+    color: #004d40 !important
+}
+.hover-text-teal.hover-text-accent-1:hover {
+    color: #a7ffeb !important
+}
+.hover-text-teal.hover-text-accent-2:hover {
+    color: #64ffda !important
+}
+.hover-text-teal.hover-text-accent-3:hover {
+    color: #1de9b6 !important
+}
+.hover-text-teal.hover-text-accent-4:hover {
+    color: #00bfa5 !important
+}
+.hover-text-green:hover {
+    color: #4CAF50 !important
+}
+.hover-text-green.hover-text-lighten-5:hover {
+    color: #E8F5E9 !important
+}
+.hover-text-green.hover-text-lighten-4:hover {
+    color: #C8E6C9 !important
+}
+.hover-text-green.hover-text-lighten-3:hover {
+    color: #A5D6A7 !important
+}
+.hover-text-green.hover-text-lighten-2:hover {
+    color: #81C784 !important
+}
+.hover-text-green.hover-text-lighten-1:hover {
+    color: #66BB6A !important
+}
+.hover-text-green.hover-text-darken-1:hover {
+    color: #43A047 !important
+}
+.hover-text-green.hover-text-darken-2:hover {
+    color: #388E3C !important
+}
+.hover-text-green.hover-text-darken-3:hover {
+    color: #2E7D32 !important
+}
+.hover-text-green.hover-text-darken-4:hover {
+    color: #1B5E20 !important
+}
+.hover-text-green.hover-text-accent-1:hover {
+    color: #B9F6CA !important
+}
+.hover-text-green.hover-text-accent-2:hover {
+    color: #69F0AE !important
+}
+.hover-text-green.hover-text-accent-3:hover {
+    color: #00E676 !important
+}
+.hover-text-green.hover-text-accent-4:hover {
+    color: #00C853 !important
+}
+.hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+.hover-text-light-green.hover-text-lighten-5:hover {
+    color: #f1f8e9 !important
+}
+.hover-text-light-green.hover-text-lighten-4:hover {
+    color: #dcedc8 !important
+}
+.hover-text-light-green.hover-text-lighten-3:hover {
+    color: #c5e1a5 !important
+}
+.hover-text-light-green.hover-text-lighten-2:hover {
+    color: #aed581 !important
+}
+.hover-text-light-green.hover-text-lighten-1:hover {
+    color: #9ccc65 !important
+}
+.hover-text-light-green.hover-text-darken-1:hover {
+    color: #7cb342 !important
+}
+.hover-text-light-green.hover-text-darken-2:hover {
+    color: #689f38 !important
+}
+.hover-text-light-green.hover-text-darken-3:hover {
+    color: #558b2f !important
+}
+.hover-text-light-green.hover-text-darken-4:hover {
+    color: #33691e !important
+}
+.hover-text-light-green.hover-text-accent-1:hover {
+    color: #ccff90 !important
+}
+.hover-text-light-green.hover-text-accent-2:hover {
+    color: #b2ff59 !important
+}
+.hover-text-light-green.hover-text-accent-3:hover {
+    color: #76ff03 !important
+}
+.hover-text-light-green.hover-text-accent-4:hover {
+    color: #64dd17 !important
+}
+.hover-text-lime:hover {
+    color: #cddc39 !important
+}
+.hover-text-lime.hover-text-lighten-5:hover {
+    color: #f9fbe7 !important
+}
+.hover-text-lime.hover-text-lighten-4:hover {
+    color: #f0f4c3 !important
+}
+.hover-text-lime.hover-text-lighten-3:hover {
+    color: #e6ee9c !important
+}
+.hover-text-lime.hover-text-lighten-2:hover {
+    color: #dce775 !important
+}
+.hover-text-lime.hover-text-lighten-1:hover {
+    color: #d4e157 !important
+}
+.hover-text-lime.hover-text-darken-1:hover {
+    color: #c0ca33 !important
+}
+.hover-text-lime.hover-text-darken-2:hover {
+    color: #afb42b !important
+}
+.hover-text-lime.hover-text-darken-3:hover {
+    color: #9e9d24 !important
+}
+.hover-text-lime.hover-text-darken-4:hover {
+    color: #827717 !important
+}
+.hover-text-lime.hover-text-accent-1:hover {
+    color: #f4ff81 !important
+}
+.hover-text-lime.hover-text-accent-2:hover {
+    color: #eeff41 !important
+}
+.hover-text-lime.hover-text-accent-3:hover {
+    color: #c6ff00 !important
+}
+.hover-text-lime.hover-text-accent-4:hover {
+    color: #aeea00 !important
+}
+.hover-text-yellow:hover {
+    color: #ffeb3b !important
+}
+.hover-text-yellow.hover-text-lighten-5:hover {
+    color: #fffde7 !important
+}
+.hover-text-yellow.hover-text-lighten-4:hover {
+    color: #fff9c4 !important
+}
+.hover-text-yellow.hover-text-lighten-3:hover {
+    color: #fff59d !important
+}
+.hover-text-yellow.hover-text-lighten-2:hover {
+    color: #fff176 !important
+}
+.hover-text-yellow.hover-text-lighten-1:hover {
+    color: #ffee58 !important
+}
+.hover-text-yellow.hover-text-darken-1:hover {
+    color: #fdd835 !important
+}
+.hover-text-yellow.hover-text-darken-2:hover {
+    color: #fbc02d !important
+}
+.hover-text-yellow.hover-text-darken-3:hover {
+    color: #f9a825 !important
+}
+.hover-text-yellow.hover-text-darken-4:hover {
+    color: #f57f17 !important
+}
+.hover-text-yellow.hover-text-accent-1:hover {
+    color: #ffff8d !important
+}
+.hover-text-yellow.hover-text-accent-2:hover {
+    color: #ff0 !important
+}
+.hover-text-yellow.hover-text-accent-3:hover {
+    color: #ffea00 !important
+}
+.hover-text-yellow.hover-text-accent-4:hover {
+    color: #ffd600 !important
+}
+.hover-text-amber:hover {
+    color: #ffc107 !important
+}
+.hover-text-amber.hover-text-lighten-5:hover {
+    color: #fff8e1 !important
+}
+.hover-text-amber.hover-text-lighten-4:hover {
+    color: #ffecb3 !important
+}
+.hover-text-amber.hover-text-lighten-3:hover {
+    color: #ffe082 !important
+}
+.hover-text-amber.hover-text-lighten-2:hover {
+    color: #ffd54f !important
+}
+.hover-text-amber.hover-text-lighten-1:hover {
+    color: #ffca28 !important
+}
+.hover-text-amber.hover-text-darken-1:hover {
+    color: #ffb300 !important
+}
+.hover-text-amber.hover-text-darken-2:hover {
+    color: #ffa000 !important
+}
+.hover-text-amber.hover-text-darken-3:hover {
+    color: #ff8f00 !important
+}
+.hover-text-amber.hover-text-darken-4:hover {
+    color: #ff6f00 !important
+}
+.hover-text-amber.hover-text-accent-1:hover {
+    color: #ffe57f !important
+}
+.hover-text-amber.hover-text-accent-2:hover {
+    color: #ffd740 !important
+}
+.hover-text-amber.hover-text-accent-3:hover {
+    color: #ffc400 !important
+}
+.hover-text-amber.hover-text-accent-4:hover {
+    color: #ffab00 !important
+}
+.hover-text-orange:hover {
+    color: #ff9800 !important
+}
+.hover-text-orange-text:hover {
+    color: #ff9800 !important
+}
+.hover-text-orange.hover-text-lighten-5:hover {
+    color: #fff3e0 !important
+}
+.hover-text-orange.hover-text-lighten-4:hover {
+    color: #ffe0b2 !important
+}
+.hover-text-orange.hover-text-lighten-3:hover {
+    color: #ffcc80 !important
+}
+.hover-text-orange.hover-text-lighten-2:hover {
+    color: #ffb74d !important
+}
+.hover-text-orange.hover-text-lighten-1:hover {
+    color: #ffa726 !important
+}
+.hover-text-orange.hover-text-darken-1:hover {
+    color: #fb8c00 !important
+}
+.hover-text-orange.hover-text-darken-2:hover {
+    color: #f57c00 !important
+}
+.hover-text-orange.hover-text-darken-3:hover {
+    color: #ef6c00 !important
+}
+.hover-text-orange.hover-text-darken-4:hover {
+    color: #e65100 !important
+}
+.hover-text-orange.hover-text-accent-1:hover {
+    color: #ffd180 !important
+}
+.hover-text-orange.hover-text-accent-2:hover {
+    color: #ffab40 !important
+}
+.hover-text-orange.hover-text-accent-3:hover {
+    color: #ff9100 !important
+}
+.hover-text-orange.hover-text-accent-4:hover {
+    color: #ff6d00 !important
+}
+.hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+.hover-text-deep-orange.hover-text-lighten-5:hover {
+    color: #fbe9e7 !important
+}
+.hover-text-deep-orange.hover-text-lighten-4:hover {
+    color: #ffccbc !important
+}
+.hover-text-deep-orange.hover-text-lighten-3:hover {
+    color: #ffab91 !important
+}
+.hover-text-deep-orange.hover-text-lighten-2:hover {
+    color: #ff8a65 !important
+}
+.hover-text-deep-orange.hover-text-lighten-1:hover {
+    color: #ff7043 !important
+}
+.hover-text-deep-orange.hover-text-darken-1:hover {
+    color: #f4511e !important
+}
+.hover-text-deep-orange.hover-text-darken-2:hover {
+    color: #e64a19 !important
+}
+.hover-text-deep-orange.hover-text-darken-3:hover {
+    color: #d84315 !important
+}
+.hover-text-deep-orange.hover-text-darken-4:hover {
+    color: #bf360c !important
+}
+.hover-text-deep-orange.hover-text-accent-1:hover {
+    color: #ff9e80 !important
+}
+.hover-text-deep-orange.hover-text-accent-2:hover {
+    color: #ff6e40 !important
+}
+.hover-text-deep-orange.hover-text-accent-3:hover {
+    color: #ff3d00 !important
+}
+.hover-text-deep-orange.hover-text-accent-4:hover {
+    color: #dd2c00 !important
+}
+.hover-text-brown:hover {
+    color: #795548 !important
+}
+.hover-text-brown.hover-text-lighten-5:hover {
+    color: #efebe9 !important
+}
+.hover-text-brown.hover-text-lighten-4:hover {
+    color: #d7ccc8 !important
+}
+.hover-text-brown.hover-text-lighten-3:hover {
+    color: #bcaaa4 !important
+}
+.hover-text-brown.hover-text-lighten-2:hover {
+    color: #a1887f !important
+}
+.hover-text-brown.hover-text-lighten-1:hover {
+    color: #8d6e63 !important
+}
+.hover-text-brown.hover-text-darken-1:hover {
+    color: #6d4c41 !important
+}
+.hover-text-brown.hover-text-darken-2:hover {
+    color: #5d4037 !important
+}
+.hover-text-brown.hover-text-darken-3:hover {
+    color: #4e342e !important
+}
+.hover-text-brown.hover-text-darken-4:hover {
+    color: #3e2723 !important
+}
+.hover-text-blue-grey:hover {
+    color: #607d8b !important
+}
+.hover-text-blue-grey.hover-text-lighten-5:hover {
+    color: #eceff1 !important
+}
+.hover-text-blue-grey.hover-text-lighten-4:hover {
+    color: #cfd8dc !important
+}
+.hover-text-blue-grey.hover-text-lighten-3:hover {
+    color: #b0bec5 !important
+}
+.hover-text-blue-grey.hover-text-lighten-2:hover {
+    color: #90a4ae !important
+}
+.hover-text-blue-grey.hover-text-lighten-1:hover {
+    color: #78909c !important
+}
+.hover-text-blue-grey.hover-text-darken-1:hover {
+    color: #546e7a !important
+}
+.hover-text-blue-grey.hover-text-darken-2:hover {
+    color: #455a64 !important
+}
+.hover-text-blue-grey.hover-text-darken-3:hover {
+    color: #37474f !important
+}
+.hover-text-blue-grey.hover-text-darken-4:hover {
+    color: #263238 !important
+}
+.hover-text-grey:hover {
+    color: #9e9e9e !important
+}
+.hover-text-grey.hover-text-lighten-5:hover {
+    color: #fafafa !important
+}
+.hover-text-grey.hover-text-lighten-4:hover {
+    color: #f5f5f5 !important
+}
+.hover-text-grey.hover-text-lighten-3:hover {
+    color: #eee !important
+}
+.hover-text-grey.hover-text-lighten-2:hover {
+    color: #e0e0e0 !important
+}
+.hover-text-grey.hover-text-lighten-1:hover {
+    color: #bdbdbd !important
+}
+.hover-text-grey.hover-text-darken-1:hover {
+    color: #757575 !important
+}
+.hover-text-grey.hover-text-darken-2:hover {
+    color: #616161 !important
+}
+.hover-text-grey.hover-text-darken-3:hover {
+    color: #424242 !important
+}
+.hover-text-grey.hover-text-darken-4:hover {
+    color: #212121 !important
+}
+.hover-text-black:hover {
+    color: #000 !important
+}
+.hover-text-white:hover {
+    color: #fff !important
+}
+
+::selection 					 { background: #2962FF; }
+::-moz-selection                 { background: #b3d4fc; text-shadow:none }
+::selection                      { background: #b3d4fc; text-shadow:none }
