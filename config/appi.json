@@ -1,0 +1,8 @@
+{
+  "isLog": false,
+  "isAntiSqlDDos": true,
+  "displayErrors": true,
+  "isWhiteIp": false,
+  "whiteIp": "176.15.22.190",
+  "Template": ".php"
+}
